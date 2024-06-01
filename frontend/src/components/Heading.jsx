@@ -18,7 +18,7 @@ export default function Heading(){
                     <p className='cursor'>Overview</p>
                     <p className='cursor' onClick={() => handleNavigation('/client')}>Client</p>
                     <p className='cursor'>Loan</p>
-                    <p className='cursor'>Usertype</p>
+                    <p className='cursor' onClick={() => handleNavigation('/userType')}>Usertype</p>
                 </div>
                 
                 
