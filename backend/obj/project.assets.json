@@ -3646,24 +3646,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\edisa\\.nuget\\packages\\": {}
+    "C:\\Users\\FOR CLONE\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PERSONAL\\SCHOOL\\2nd Sem\\Web Programming\\LoanSystem\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\Users\\FOR CLONE\\Desktop\\Loan\\LoanSystem\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "D:\\PERSONAL\\SCHOOL\\2nd Sem\\Web Programming\\LoanSystem\\backend\\backend.csproj",
-      "packagesPath": "C:\\Users\\edisa\\.nuget\\packages\\",
-      "outputPath": "D:\\PERSONAL\\SCHOOL\\2nd Sem\\Web Programming\\LoanSystem\\backend\\obj\\",
+      "projectPath": "C:\\Users\\FOR CLONE\\Desktop\\Loan\\LoanSystem\\backend\\backend.csproj",
+      "packagesPath": "C:\\Users\\FOR CLONE\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\FOR CLONE\\Desktop\\Loan\\LoanSystem\\backend\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\edisa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\FOR CLONE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3720,7 +3727,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

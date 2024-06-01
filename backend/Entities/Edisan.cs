@@ -21,17 +21,19 @@ public partial class EdisanContext : DbContext
 
     public virtual DbSet<LoanPay> LoanPays { get; set; }
 
+    public virtual DbSet<Transaction> Transactions { get; set; }
+
     public virtual DbSet<UserType> UserTypes { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=localhost\\EDISANEXPRESS;Database=Edisan;TrustServerCertificate=true;Trusted_Connection=True");
+        => optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=Edisan;TrustServerCertificate=true;Trusted_Connection=true;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<ClientInfo>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__ClientIn__3213E83F19BF6630");
+            entity.HasKey(e => e.Id).HasName("PK__ClientIn__3213E83F23E48AD4");
 
             entity.ToTable("ClientInfo");
 
@@ -70,7 +72,7 @@ public partial class EdisanContext : DbContext
 
         modelBuilder.Entity<Loan>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Loan__3214EC07CD7FE852");
+            entity.HasKey(e => e.Id).HasName("PK__Loan__3214EC0718EA4844");
 
             entity.ToTable("Loan");
 
@@ -86,7 +88,7 @@ public partial class EdisanContext : DbContext
 
         modelBuilder.Entity<LoanPay>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__loanPay__3214EC07BF064AB1");
+            entity.HasKey(e => e.Id).HasName("PK__loanPay__3214EC07F58B969C");
 
             entity.ToTable("loanPay");
 
@@ -98,9 +100,23 @@ public partial class EdisanContext : DbContext
                 .HasColumnName("status");
         });
 
+        modelBuilder.Entity<Transaction>(entity =>
+        {
+            entity.HasKey(e => e.TransactionId).HasName("PK__Transact__85C600AF3FA14950");
+
+            entity.ToTable("Transaction");
+
+            entity.Property(e => e.TransactionId).HasColumnName("transaction_id");
+            entity.Property(e => e.Amount).HasColumnName("amount");
+            entity.Property(e => e.ScheduleId).HasColumnName("schedule_id");
+            entity.Property(e => e.TransactionDate)
+                .HasColumnType("date")
+                .HasColumnName("transaction_date");
+        });
+
         modelBuilder.Entity<UserType>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__UserType__3213E83F9C74343B");
+            entity.HasKey(e => e.Id).HasName("PK__UserType__3213E83FBEC58318");
 
             entity.ToTable("UserType");
 

@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add DbContext
 builder.Services.AddDbContext<EdisanContext>(options =>
 {
-    options.UseSqlServer("Server=localhost\\EDISANEXPRESS;Database=EdisanTheLenderMachine;TrustServerCertificate=true; Trusted_Connection=True");
+    options.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=EdisanTheLenderMachine;TrustServerCertificate=true; Trusted_Connection=True");
 });
 
 // Add services to the container.

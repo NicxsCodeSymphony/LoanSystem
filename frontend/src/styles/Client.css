@@ -1,9 +1,8 @@
 .container {
-    padding-top: 2vh;
     display: grid;
     grid-template-columns: 3fr 2fr 2fr;
     grid-gap: 18px;
-    height: 40vh;
+    height: 50vh;
 }
 
 .edit, .delete{
@@ -31,6 +30,8 @@
     width: 100%;
 }
 
+
+
 .first-left h6 {
     font-weight: 400;
 }
@@ -56,6 +57,7 @@
     display: grid;
     grid-template-rows: 4fr 3fr;
     grid-gap: 15px;
+
 }
 
 .container > div:nth-child(2) > div:first-child {
@@ -156,7 +158,6 @@
     width: 100%;
     background-color: antiquewhite;
     height: 30vh;
-    margin-top: 18px;
     border-radius: 15px;
     padding: 25px 50px;
 }
@@ -185,17 +186,17 @@
     color: var(--textColor);
 }
 
-.table-container{
+.table-container {
     overflow: auto;
-    height: 80%;
+    height: 80%; /* Set height to 100% */
 }
-
 
 table {
     width: 100%;
     border-collapse: collapse;
     background-color: antiquewhite;
     border-radius: 15px;
+    height: 30vh; /* Set height to 100% */
 }
 
 th, td {
@@ -248,3 +249,35 @@ td:last-child {
     align-items: center;
 }
 
+
+@media only screen and (max-height: 1600px){
+
+    .container{
+        height: 44vh;
+    }
+    .first-right h4 {
+        font-size: 12px;
+    }
+
+    .container > div:first-child{
+        height: 41.5vh;
+    }
+
+    .container > div:nth-child(2){
+        height: 40%;
+    }
+
+
+    .total-payable, .total-paid{
+        height: 100%;
+        padding: 15px;
+    }
+
+    .total-payable h2{
+        margin-top: 5px;
+    }
+
+    .container > div:last-child{
+        height: 30%;
+    }
+}

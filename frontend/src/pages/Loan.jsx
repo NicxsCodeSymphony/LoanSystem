@@ -113,10 +113,10 @@ export default function LoanInfo() {
                             <h2 className='payable-amount'>₱{totalPayable.toLocaleString()}</h2>
                             <p className='label'>Amount Payable</p>
                         </div>
-                        <div className='total-paid'>
+                        <div className='total-payable'>
                             <div className='money-icon'><FaMoneyBillWave /></div>
                             <h2 className='payable-amount'>₱{totalPaid.toLocaleString()}</h2>
-                            <p className='label'>Total Amount Paid</p>
+                            <p className='label'>Amount Paid</p>
                         </div>
                     </div>
                     <div className='loan-info-container'>

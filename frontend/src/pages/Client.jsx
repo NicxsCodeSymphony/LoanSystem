@@ -82,16 +82,16 @@ export default function Client() {
                            <h2 className='payable-amount'>₱500K</h2>
                            <p className='label'>Amount Payable</p>
                         </div>
-                        <div className='total-paid'>
+                        <div className='total-payable'>
                         <div className='money-icon'><FaMoneyBillWave /></div>
                            <h2 className='payable-amount'>₱500K</h2>
-                           <p className='label'>Total Amount Paid</p>
+                           <p className='label'>Amount Paid</p>
                         </div>
                     </div>
                     <div className='loan-info-container cursor'  onClick={()=>loan(clientData.id)}>
                         <p className='label'>Loan Information</p>
                         {/* <p className='details'>Details</p> */}
-                        <h2>See Loan Info Here</h2>
+                        <h2>See Loan Info <br /> Here</h2>
                     </div>
                 </div>
                 {/* Third grid */}

@@ -62,3 +62,9 @@
 .button2.close {
     background-color: #e53e3e;
 }
+
+@media only screen and (max-width: 1600px){
+    .modal-content2{
+        height: 80%;
+    }
+}
