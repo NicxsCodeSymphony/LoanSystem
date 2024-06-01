@@ -1,0 +1,64 @@
+/* addLoan.css */
+.modal-container2 {
+    position: fixed;
+    inset: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content2 {
+    background-color: white;
+    width: 40%;
+    height: 70%;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.modal-title2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.form-container2 {
+    margin-top: 2rem;
+}
+
+.form-section2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-group2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group2 input,
+.form-group2 select {
+    border: 1px solid #ccc;
+    padding: 10px 0.25rem;
+    width: 100%;
+}
+
+.button-group2 {
+    margin-top: 1rem;
+}
+
+.button2 {
+    background-color: #38a169;
+    color: white;
+    margin-left: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.button2.close {
+    background-color: #e53e3e;
+}

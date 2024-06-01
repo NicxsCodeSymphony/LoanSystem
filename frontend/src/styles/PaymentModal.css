@@ -1,0 +1,49 @@
+.pay-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pay-container {
+    background-color: white;
+    width: 33%;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.pay-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.pay-input {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.pay-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pay-cancel {
+    margin-right: 1rem;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: var(--titleColor)
+}
+
+.pay-pay {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+}

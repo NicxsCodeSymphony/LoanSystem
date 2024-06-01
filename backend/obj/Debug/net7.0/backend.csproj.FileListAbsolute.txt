@@ -1,0 +1,225 @@
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\appsettings.Development.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\appsettings.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\backend.staticwebassets.runtime.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\backend.exe
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\backend.deps.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\backend.runtimeconfig.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\backend.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\backend.pdb
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Azure.Core.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Azure.Identity.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Humanizer.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\Mono.TextTemplating.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\System.CodeDom.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\System.Drawing.Common.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\System.Memory.Data.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\System.Runtime.Caching.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\System.Security.Permissions.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\System.Windows.Extensions.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\backend.csproj.AssemblyReference.cache
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\backend.AssemblyInfoInputs.cache
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\backend.AssemblyInfo.cs
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\backend.csproj.CoreCompileInputs.cache
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\backend.MvcApplicationPartsAssemblyInfo.cache
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\backend.RazorAssemblyInfo.cache
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\backend.RazorAssemblyInfo.cs
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets\msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets\msbuild.build.backend.props
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.backend.props
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.backend.props
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets.pack.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets.build.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets.development.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\scopedcss\bundle\backend.styles.css
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\scopedcss\projectbundle\backend.bundle.scp.css
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\backend.csproj.CopyComplete
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\backend.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\refint\backend.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\backend.pdb
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\backend.genruntimeconfig.cache
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\EDISANMVC\backend\obj\Debug\net7.0\ref\backend.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\appsettings.Development.json
+d:\EDISANMVC\backend\bin\Debug\net7.0\appsettings.json
+d:\EDISANMVC\backend\bin\Debug\net7.0\backend.staticwebassets.runtime.json
+d:\EDISANMVC\backend\bin\Debug\net7.0\backend.exe
+d:\EDISANMVC\backend\bin\Debug\net7.0\backend.deps.json
+d:\EDISANMVC\backend\bin\Debug\net7.0\backend.runtimeconfig.json
+d:\EDISANMVC\backend\bin\Debug\net7.0\backend.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\backend.pdb
+d:\EDISANMVC\backend\bin\Debug\net7.0\Azure.Core.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Azure.Identity.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Humanizer.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\Mono.TextTemplating.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\System.CodeDom.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\System.Drawing.Common.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\System.Memory.Data.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\System.Runtime.Caching.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\System.Security.Permissions.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\System.Windows.Extensions.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+d:\EDISANMVC\backend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+d:\EDISANMVC\backend\obj\Debug\net7.0\backend.csproj.AssemblyReference.cache
+d:\EDISANMVC\backend\obj\Debug\net7.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+d:\EDISANMVC\backend\obj\Debug\net7.0\backend.AssemblyInfoInputs.cache
+d:\EDISANMVC\backend\obj\Debug\net7.0\backend.AssemblyInfo.cs
+d:\EDISANMVC\backend\obj\Debug\net7.0\backend.csproj.CoreCompileInputs.cache
+d:\EDISANMVC\backend\obj\Debug\net7.0\backend.MvcApplicationPartsAssemblyInfo.cache
+d:\EDISANMVC\backend\obj\Debug\net7.0\backend.RazorAssemblyInfo.cache
+d:\EDISANMVC\backend\obj\Debug\net7.0\backend.RazorAssemblyInfo.cs
+d:\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets\msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props
+d:\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets\msbuild.build.backend.props
+d:\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.backend.props
+d:\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.backend.props
+d:\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets.pack.json
+d:\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets.build.json
+d:\EDISANMVC\backend\obj\Debug\net7.0\staticwebassets.development.json
+d:\EDISANMVC\backend\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+d:\EDISANMVC\backend\obj\Debug\net7.0\scopedcss\bundle\backend.styles.css
+d:\EDISANMVC\backend\obj\Debug\net7.0\scopedcss\projectbundle\backend.bundle.scp.css
+d:\EDISANMVC\backend\obj\Debug\net7.0\backend.csproj.CopyComplete
+d:\EDISANMVC\backend\obj\Debug\net7.0\backend.dll
+d:\EDISANMVC\backend\obj\Debug\net7.0\refint\backend.dll
+d:\EDISANMVC\backend\obj\Debug\net7.0\backend.pdb
+d:\EDISANMVC\backend\obj\Debug\net7.0\backend.genruntimeconfig.cache
+d:\EDISANMVC\backend\obj\Debug\net7.0\ref\backend.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\appsettings.Development.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\appsettings.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\backend.staticwebassets.runtime.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\backend.exe
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\backend.deps.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\backend.runtimeconfig.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\backend.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\backend.pdb
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Azure.Core.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Azure.Identity.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Humanizer.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\Mono.TextTemplating.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\System.CodeDom.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\System.Drawing.Common.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\System.Memory.Data.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\System.Runtime.Caching.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\System.Security.Permissions.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\System.Windows.Extensions.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\backend.csproj.AssemblyReference.cache
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\backend.AssemblyInfoInputs.cache
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\backend.AssemblyInfo.cs
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\backend.csproj.CoreCompileInputs.cache
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\backend.MvcApplicationPartsAssemblyInfo.cache
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\backend.RazorAssemblyInfo.cache
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\backend.RazorAssemblyInfo.cs
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\staticwebassets\msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\staticwebassets\msbuild.build.backend.props
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.backend.props
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.backend.props
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\staticwebassets.pack.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\staticwebassets.build.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\staticwebassets.development.json
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\scopedcss\bundle\backend.styles.css
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\scopedcss\projectbundle\backend.bundle.scp.css
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\backend.csproj.CopyComplete
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\backend.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\refint\backend.dll
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\backend.pdb
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\backend.genruntimeconfig.cache
+d:\PERSONAL\SCHOOL\2nd Sem\Web Programming\LoanSystem\backend\obj\Debug\net7.0\ref\backend.dll

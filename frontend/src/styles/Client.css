@@ -1,0 +1,250 @@
+.container {
+    padding-top: 12vh;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-gap: 18px;
+    height: 50vh;
+}
+
+.edit, .delete{
+    position: absolute;
+    font-size: 12px;
+    top: 20px;
+    right: 20px;
+}
+
+.edit{
+    right: 70px;
+}
+
+.container > div:first-child {
+    border-radius: 15px;
+    background-color: antiquewhite;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    position: relative;
+}
+
+.first-left {
+    width: 100%;
+}
+
+.first-left h6 {
+    font-weight: 400;
+}
+
+.first-left img {
+    width: 25vh;
+    height: 25vh;
+    margin-top: 24px;
+    border-radius: 15px;
+}
+
+.first-right {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.container > div:last-child {
+    display: grid;
+    grid-template-rows: repeat(3, 2fr);
+}
+
+.container > div:nth-child(2) {
+    display: grid;
+    grid-template-rows: 4fr 3fr;
+    grid-gap: 15px;
+}
+
+.container > div:nth-child(2) > div:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 15px;
+}
+
+.total-payable {
+    border-radius: 15px;
+    background-color: var(--titleText);
+    padding: 20px;
+}
+
+.total-paid {
+    border-radius: 15px;
+    background-color: var(--titleText);
+    padding: 20px;
+}
+
+.money-icon {
+    background-color: antiquewhite;
+    color: #000;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.payable-amount {
+    margin-top: 20px;
+}
+
+.label {
+    margin-top: 20px;
+}
+
+.container > div:nth-child(2) > div:first-child > div:last-child {
+    border-radius: 15px;
+    background-color: var(--textColor);
+}
+
+.loan-info-container {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.loan-info-container .label {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.details {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 10px;
+}
+
+.loan-info-container h3 {
+    margin-top: 5px;
+}
+
+.loan-info-container h2 {
+    margin-top: 2px;
+    font-size: 30px;
+}
+
+.container > div:last-child > div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container > div:last-child > div p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.container > div:last-child > div:first-child {
+    border-start-end-radius: 20px;
+    border-start-start-radius: 20px;
+    background-color: antiquewhite;
+}
+
+.container > div:last-child > div:last-child {
+    border-end-end-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: antiquewhite;
+}
+
+.client-list {
+    width: 100%;
+    background-color: antiquewhite;
+    height: 30vh;
+    margin-top: 18px;
+    border-radius: 15px;
+    padding: 25px 50px;
+}
+
+.list-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.list-heading h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.list-heading p {
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+    color: var(--titleText);
+    transition: color 0.3s;
+}
+
+.list-heading p:hover {
+    color: var(--textColor);
+}
+
+.table-container{
+    overflow: auto;
+    height: 80%;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--titleText);
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+td:last-child {
+    display: flex;
+    justify-content: space-around;
+}
+
+.table-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+/* LOAN */
+
+.choose-loan{
+    display: flex;
+    margin-top: 10px
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--titleText);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

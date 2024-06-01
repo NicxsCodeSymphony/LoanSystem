@@ -1,0 +1,67 @@
+/* CreateClient.css */
+
+.container1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 66.66%;
+    height: 90%;
+    background-color: #f3f4f6;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.form-wrapper1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.form-left {
+    width: 50%;
+    padding: 2rem;
+}
+
+.form-right {
+    width: 50%;
+    padding: 2rem;
+}
+
+.label {
+    margin-top: 1rem;
+}
+
+.input {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    background-color: transparent;
+}
+
+.error {
+    color: #ef4444;
+    margin-top: 0.5rem;
+}
+
+.button {
+    position: fixed;
+    bottom: 6rem;
+    left: 33.33%;
+    width: 33.33%;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    background-color: #3b82f6;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2563eb;
+}
+
+.input-container{
+    margin-top: 20px;
+}

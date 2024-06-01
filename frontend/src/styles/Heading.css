@@ -1,0 +1,13 @@
+.header{
+    display: block;
+    position: relative;
+}
+
+.navbar{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 30%;
+    margin-bottom: 30px;
+}
