@@ -11,3 +11,11 @@
     width: 30%;
     margin-bottom: 30px;
 }
+
+.brand{
+    color: var(--titleText)
+}
+
+.brand span{
+    color: var(--textColor)
+}
