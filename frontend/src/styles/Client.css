@@ -1,9 +1,9 @@
 .container {
-    padding-top: 12vh;
+    padding-top: 2vh;
     display: grid;
     grid-template-columns: 3fr 2fr 2fr;
     grid-gap: 18px;
-    height: 50vh;
+    height: 40vh;
 }
 
 .edit, .delete{

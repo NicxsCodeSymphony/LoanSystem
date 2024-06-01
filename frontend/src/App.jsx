@@ -6,6 +6,9 @@ import Client from './pages/Client'
 import LoanInfo from './pages/Loan'
 import EditClient from './pages/EditClient'
 import AddClient from './pages/CreateClient'
+import UserType from './pages/UserType'
+import CreateUserType from './components/CreateUserType'
+import EditUserType from './components/EditUserType'
 
 function App() {
 
@@ -18,6 +21,10 @@ function App() {
         <Route path='/Loan/:id' element={<LoanInfo />}></Route>
         <Route path='/clientEdit/:id' element={<EditClient />}></Route>
         <Route path='/createClient' element={<AddClient />}></Route>
+        <Route path='/usertype' element={<UserType />}></Route>
+        <Route path='/create/userType' element={<CreateUserType />}></Route>
+        <Route path='/edit/usertype/:id' element={<EditUserType />}></Route>
+       
       </Routes>
     </div>
   )
