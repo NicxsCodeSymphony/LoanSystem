@@ -87,7 +87,7 @@ const PaymentModal = ({ isOpen, onClose, loanId, currentAmount }) => {
                         {formData.status === 'Paid' ? (
                             <>
                                 <h2 className="pay-title">Payment for this schedule was Paid</h2>
-                                <p className="pay-status">Paid on {formData.schedule ? formatDate(formData.schedule, true) : ''}</p>
+                                <p className="pay-status">Paid on {formData.schedule ? formatDate(formData.loanTime, true) : ''}</p>
                                 <div className="pay-actions">
                                     <button onClick={onClose} className="pay-cancel cursor">Close</button>
                                 </div>
