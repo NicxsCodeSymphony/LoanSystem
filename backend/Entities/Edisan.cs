@@ -102,7 +102,7 @@ public partial class EdisanContext : DbContext
 
         modelBuilder.Entity<Transaction>(entity =>
         {
-            entity.HasKey(e => e.TransactionId).HasName("PK__Transact__85C600AF3FA14950");
+            entity.HasKey(e => e.TransactionId).HasName("PK__Transact__85C600AFD00FBF69");
 
             entity.ToTable("Transaction");
 
@@ -110,7 +110,7 @@ public partial class EdisanContext : DbContext
             entity.Property(e => e.Amount).HasColumnName("amount");
             entity.Property(e => e.ScheduleId).HasColumnName("schedule_id");
             entity.Property(e => e.TransactionDate)
-                .HasColumnType("date")
+                .HasColumnType("datetime")
                 .HasColumnName("transaction_date");
         });
 

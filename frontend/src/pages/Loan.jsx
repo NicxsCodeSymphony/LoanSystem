@@ -89,33 +89,50 @@ export default function LoanInfo() {
         fetchPayLoan(loanId);
     };
 
-    const formatDate = (dateString, includeTime = false) => {
-        const options = { 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric'
-        };
-        const date = new Date(dateString);
-        if (!includeTime) {
-            return date.toLocaleDateString(undefined, options);
-        } else {
-            return date.toLocaleDateString(undefined, options) + `, ${date.getHours()}:${date.getMinutes()}${date.getHours() < 12 ? 'am' : 'pm'}`;
-        }
-    };
-
     const calculateTotalPaid = (loanId) => {
         if (!Transaction) return 0;
-    
-        // Filter transactions for the specific loanId and sum the amounts
         const totalPaid = Transaction
             .filter(transaction => transaction.scheduleId === loanId)
             .reduce((sum, transaction) => sum + transaction.amount, 0);
     
         return totalPaid;
     };
+
+    const getTransactionDate = (loanId) => {
+        if (!Transaction) return '';
+        const transactionsForLoan = Transaction.filter(transaction => transaction.scheduleId === loanId);
+        if (transactionsForLoan.length > 0) {
+            transactionsForLoan.sort((a, b) => new Date(b.transactionDate) - new Date(a.transactionDate));
+            const latestTransactionDate = transactionsForLoan[0].transactionDate;
+            const date = new Date(latestTransactionDate);
+            if (!isNaN(date.getTime())) {
+                return formatDate(date, true);
+            } else {
+                return '';
+            }
+        } else {
+            return ''; 
+        }
+    };
+    
+    const formatDate = (dateString, includeTime = false) => {
+        const options = { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric'
+        };
+        const date = new Date(dateString);
+        if (!includeTime) {
+            return date.toLocaleDateString('en-US', options);
+        } else {
+            return date.toLocaleDateString('en-US', options);
+        }
+    };
     
 
-
+    
     return (
         <div className='client-page'>
             <Heading />
@@ -211,7 +228,7 @@ export default function LoanInfo() {
             <td>{loan.loanId}</td>
             <td>{loan.schedule ? formatDate(loan.schedule) : ''}</td>
             <td>₱{Math.max(loan.payment - calculateTotalPaid(loan.id), 0).toFixed(2)}</td>
-            <td>{loan.loanTime ? formatDate(loan.loanTime, true) : ''}</td>
+            <td>{loan.id ? getTransactionDate(loan.id) : ''}</td>
             <td>{loan.status}</td>
             {/* <td><p>Pay</p></td> */}
         </tr>

@@ -107,6 +107,24 @@ const PaymentModal = ({ isOpen, onClose, loanId, currentAmount }) => {
         return totalPaid;
     };
 
+    // Function to get the last transaction date
+    const getTransactionDate = (loanId) => {
+        if (!Transaction) return '';
+        const transactionsForLoan = Transaction.filter(transaction => transaction.scheduleId === loanId);
+        if (transactionsForLoan.length > 0) {
+            transactionsForLoan.sort((a, b) => new Date(b.transactionDate) - new Date(a.transactionDate));
+            const latestTransactionDate = transactionsForLoan[0].transactionDate;
+            const date = new Date(latestTransactionDate);
+            if (!isNaN(date.getTime())) {
+                return formatDate(date);
+            } else {
+                return '';
+            }
+        } else {
+            return ''; 
+        }
+    };
+
     if (!isOpen) return null;
 
     return (
@@ -121,7 +139,7 @@ const PaymentModal = ({ isOpen, onClose, loanId, currentAmount }) => {
                         {formData.status === 'Paid' ? (
                             <>
                                 <h2 className="pay-title">Payment for this schedule was Paid</h2>
-                                <p className="pay-status">Paid on {formData.schedule ? formatDate(formData.loanTime, true) : ''}</p>
+                                <p className="pay-status">Paid on {getTransactionDate(formData.id)}</p>
                                 <div className="pay-actions">
                                     <button onClick={onClose} className="pay-cancel cursor">Close</button>
                                 </div>

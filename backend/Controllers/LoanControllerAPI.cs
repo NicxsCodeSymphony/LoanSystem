@@ -153,7 +153,6 @@ public IActionResult PayTheLoan(int id, [FromBody] LoanPay loan)
 
     try
     {
-        // Create the initial transaction
         var transaction = new Transaction
         {
             ScheduleId = existingLoanPay.Id,
@@ -163,23 +162,16 @@ public IActionResult PayTheLoan(int id, [FromBody] LoanPay loan)
 
         _context.Transactions.Add(transaction);
         _context.SaveChanges();
-
-        // Calculate total paid for the current LoanPay
         var totalPaid = _context.Transactions
             .Where(t => t.ScheduleId == existingLoanPay.Id)
             .Sum(t => t.Amount);
-
-        // Check if the current LoanPay is fully paid
         if (totalPaid >= existingLoanPay.Payment)
         {
             existingLoanPay.Status = "Paid";
             _context.SaveChanges();
-
-            // Handle excess payment
             double? excessPayment = totalPaid - existingLoanPay.Payment.Value;
             while (excessPayment > 0)
             {
-                // Find the next unpaid LoanPay entry
                 var nextLoanPay = _context.LoanPays
                     .Where(lp => lp.LoanId == loanEntity.Id && lp.Status != "Paid")
                     .OrderBy(lp => lp.Schedule)
@@ -191,8 +183,6 @@ public IActionResult PayTheLoan(int id, [FromBody] LoanPay loan)
                 }
 
                 double nextPayment = nextLoanPay.Payment ?? 0;
-
-                // Determine the amount to pay towards the next LoanPay entry
                 if (excessPayment >= nextPayment)
                 {
                     var excessTransaction = new Transaction
@@ -204,7 +194,7 @@ public IActionResult PayTheLoan(int id, [FromBody] LoanPay loan)
 
                     _context.Transactions.Add(excessTransaction);
                     nextLoanPay.Status = "Paid";
-                    excessPayment -= nextPayment; // Deduct the full nextPayment from the excessPayment
+                    excessPayment -= nextPayment; 
                 }
                 else
                 {
