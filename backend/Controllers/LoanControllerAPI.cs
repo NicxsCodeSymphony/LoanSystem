@@ -116,8 +116,22 @@ namespace backend.Controllers
             return Ok(loanInfo);
         }
 
+[HttpGet("GetAllTransactions")]
+public IActionResult GetAllTransactions()
+{
+    var transactions = _context.Transactions.ToList();
 
-[HttpPut("PayTheLoan/{id}")]
+    if (transactions == null || transactions.Count == 0)
+    {
+        return NotFound("No transactions found.");
+    }
+
+    return Ok(transactions);
+}
+
+
+
+ [HttpPut("PayTheLoan/{id}")]
 public IActionResult PayTheLoan(int id, [FromBody] LoanPay loan)
 {
     if (loan == null)
@@ -139,22 +153,78 @@ public IActionResult PayTheLoan(int id, [FromBody] LoanPay loan)
 
     try
     {
-        // Calculate excess payment
-        double? excessPayment = loan.Payment - existingLoanPay.Payment.Value;
-
-        // Update the LoanPay entity
-        existingLoanPay.Schedule = loan.Schedule;
-        existingLoanPay.LoanTime = DateTime.Now;
-
-        if (existingLoanPay.Payment <= 0)
+        // Create the initial transaction
+        var transaction = new Transaction
         {
-            existingLoanPay.Payment = 0;
+            ScheduleId = existingLoanPay.Id,
+            Amount = loan.Payment,
+            TransactionDate = DateTime.Now
+        };
+
+        _context.Transactions.Add(transaction);
+        _context.SaveChanges();
+
+        // Calculate total paid for the current LoanPay
+        var totalPaid = _context.Transactions
+            .Where(t => t.ScheduleId == existingLoanPay.Id)
+            .Sum(t => t.Amount);
+
+        // Check if the current LoanPay is fully paid
+        if (totalPaid >= existingLoanPay.Payment)
+        {
             existingLoanPay.Status = "Paid";
+            _context.SaveChanges();
+
+            // Handle excess payment
+            double? excessPayment = totalPaid - existingLoanPay.Payment.Value;
+            while (excessPayment > 0)
+            {
+                // Find the next unpaid LoanPay entry
+                var nextLoanPay = _context.LoanPays
+                    .Where(lp => lp.LoanId == loanEntity.Id && lp.Status != "Paid")
+                    .OrderBy(lp => lp.Schedule)
+                    .FirstOrDefault();
+
+                if (nextLoanPay == null)
+                {
+                    break; // No more unpaid LoanPay entries
+                }
+
+                double nextPayment = nextLoanPay.Payment ?? 0;
+
+                // Determine the amount to pay towards the next LoanPay entry
+                if (excessPayment >= nextPayment)
+                {
+                    var excessTransaction = new Transaction
+                    {
+                        ScheduleId = nextLoanPay.Id,
+                        Amount = nextPayment,
+                        TransactionDate = DateTime.Now
+                    };
+
+                    _context.Transactions.Add(excessTransaction);
+                    nextLoanPay.Status = "Paid";
+                    excessPayment -= nextPayment; // Deduct the full nextPayment from the excessPayment
+                }
+                else
+                {
+                    var excessTransaction = new Transaction
+                    {
+                        ScheduleId = nextLoanPay.Id,
+                        Amount = excessPayment.Value,
+                        TransactionDate = DateTime.Now
+                    };
+
+                    _context.Transactions.Add(excessTransaction);
+                    // Do not subtract excess payment from nextLoanPay.Payment
+                    excessPayment = 0; // All excess payment applied
+                }
+
+                _context.SaveChanges();
+            }
         }
-        else
-        {
-            existingLoanPay.Status = "Initial Payment";
-        }
+
+        // Update the total left amount and status of the loan entity
         loanEntity.TotalLeft -= loan.Payment;
         if (loanEntity.TotalLeft <= 0)
         {
@@ -167,24 +237,6 @@ public IActionResult PayTheLoan(int id, [FromBody] LoanPay loan)
         }
         _context.SaveChanges();
 
-        var transaction = new Transaction
-        {
-            ScheduleId = existingLoanPay.Id,
-            Amount = loan.Payment,
-            TransactionDate = DateTime.Now
-        };
-
-        _context.Transactions.Add(transaction);
-        _context.SaveChanges();
-        var totalPaid = _context.Transactions
-            .Where(t => t.ScheduleId == existingLoanPay.Id)
-            .Sum(t => t.Amount);
-        if (totalPaid == existingLoanPay.Payment)
-        {
-            existingLoanPay.Status = "Paid";
-            _context.SaveChanges();
-        }
-
         return Ok();
     }
     catch (Exception ex)
@@ -192,8 +244,6 @@ public IActionResult PayTheLoan(int id, [FromBody] LoanPay loan)
         return StatusCode(500, $"An error occurred while updating the entities: {ex.Message}");
     }
 }
-
-
 
 
         [HttpGet("GetLoanbyId/{id}")]

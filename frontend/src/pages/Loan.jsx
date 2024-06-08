@@ -20,6 +20,7 @@ export default function LoanInfo() {
     const [isOpenLoanModal, setOpenLoanModal] = useState(false);
     const [paymentModalOpen, setPaymentModalOpen] = useState(false);
     const [selectedLoan, setSelectedLoan] = useState(null);
+    const [Transaction, setTransactions] = useState(null);
 
     useEffect(() => {
         if (loans && loans.length > 0) {
@@ -42,6 +43,24 @@ export default function LoanInfo() {
         }
     }, [loans]);
 
+    const fetchTransactions = async () => {
+        try {
+            const response = await fetch('http://localhost:5291/LoanControllerAPI/GetAllTransactions');
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            const data = await response.json();
+            console.log('Transactions:', data); 
+            setTransactions(data);
+        } catch (error) {
+            console.error('Error fetching transactions:', error);
+        }
+    };
+
+    useEffect(() => {
+        fetchTransactions(); // Fetch transactions when component mounts
+    }, []); // Empty dependency array ensures it runs once
+
     const openPaymentModal = (loan) => {
         setSelectedLoan(loan);
         setPaymentModalOpen(true);
@@ -56,6 +75,7 @@ export default function LoanInfo() {
         try {
             const response = await fetch(`http://localhost:5291/LoanControllerAPI/GetPayLoan/${loanId}`);
             const data = await response.json();
+            console.log(data);
             setPayLoanData(data);
         } catch (error) {
             console.error('Error fetching pay loan data:', error);
@@ -82,6 +102,18 @@ export default function LoanInfo() {
             return date.toLocaleDateString(undefined, options) + `, ${date.getHours()}:${date.getMinutes()}${date.getHours() < 12 ? 'am' : 'pm'}`;
         }
     };
+
+    const calculateTotalPaid = (loanId) => {
+        if (!Transaction) return 0;
+    
+        // Filter transactions for the specific loanId and sum the amounts
+        const totalPaid = Transaction
+            .filter(transaction => transaction.scheduleId === loanId)
+            .reduce((sum, transaction) => sum + transaction.amount, 0);
+    
+        return totalPaid;
+    };
+    
 
 
     return (
@@ -173,18 +205,20 @@ export default function LoanInfo() {
                             </tr>
                         </thead>
                         <tbody>
-                            {payLoanData.map(loan => (
-                                <tr className='cursor' key={loan.id} onClick={() => openPaymentModal(loan)}>
-                                    <td>{loan.id}</td>
-                                    <td>{loan.loanId}</td>
-                                    <td>{loan.schedule ? formatDate(loan.schedule) : ''}</td>
-                                    <td>₱{loan.payment.toFixed(2)}</td>
-                                    <td>{loan.loanTime ? formatDate(loan.loanTime, true) : ''}</td>
-                                    <td>{loan.status}</td>
-                                    {/* <td><p>Pay</p></td> */}
-                                </tr>
-                            ))}
-                        </tbody>
+    {payLoanData.map(loan => (
+        <tr className='cursor' key={loan.id} onClick={() => openPaymentModal(loan)}>
+            <td>{loan.id}</td>
+            <td>{loan.loanId}</td>
+            <td>{loan.schedule ? formatDate(loan.schedule) : ''}</td>
+            <td>₱{Math.max(loan.payment - calculateTotalPaid(loan.id), 0).toFixed(2)}</td>
+            <td>{loan.loanTime ? formatDate(loan.loanTime, true) : ''}</td>
+            <td>{loan.status}</td>
+            {/* <td><p>Pay</p></td> */}
+        </tr>
+    ))}
+</tbody>
+
+
                     </table>
                 </div>
             </div>

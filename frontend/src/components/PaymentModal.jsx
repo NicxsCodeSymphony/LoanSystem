@@ -7,6 +7,9 @@ const PaymentModal = ({ isOpen, onClose, loanId, currentAmount }) => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
     const [payment, setPayment] = useState(currentAmount);
+    const [totalLeft, setTotalLeft] = useState(0); // State to hold the total left
+    const [Transaction, setTransactions] = useState(null);
+    
 
     useEffect(() => {
         if (isOpen) {
@@ -16,6 +19,9 @@ const PaymentModal = ({ isOpen, onClose, loanId, currentAmount }) => {
                     const loanInfo = response.data;
                     setFormData(loanInfo);
                     setLoading(false);
+                    // Calculate total left here and set it to state
+                    const totalLeft = loanInfo.payment - calculateTotalPaid(loanId);
+                    setTotalLeft(totalLeft);
                 })
                 .catch(error => {
                     console.error("There was an error fetching loan info!", error);
@@ -71,7 +77,35 @@ const PaymentModal = ({ isOpen, onClose, loanId, currentAmount }) => {
         return formattedDate.toLocaleString('en-US', options);
     };
 
-    
+    const fetchTransactions = async () => {
+        try {
+            const response = await fetch('http://localhost:5291/LoanControllerAPI/GetAllTransactions');
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            const data = await response.json();
+            console.log('Transactions:', data); 
+            setTransactions(data);
+        } catch (error) {
+            console.error('Error fetching transactions:', error);
+        }
+    };
+
+    useEffect(() => {
+        fetchTransactions(); // Fetch transactions when component mounts
+    }, []); // Empty dependency array ensures it runs once
+
+    // Function to calculate total paid from transactions
+    const calculateTotalPaid = (loanId) => {
+        if (!Transaction) return 0;
+
+        // Filter transactions for the specific loanId and sum the amounts
+        const totalPaid = Transaction
+            .filter(transaction => transaction.scheduleId === loanId)
+            .reduce((sum, transaction) => sum + transaction.amount, 0);
+
+        return totalPaid;
+    };
 
     if (!isOpen) return null;
 
@@ -94,12 +128,12 @@ const PaymentModal = ({ isOpen, onClose, loanId, currentAmount }) => {
                             </>
                         ) : (
                             <>
-                                <h2 className="pay-title">Pay Loan:  ₱{currentAmount.toFixed(2)}</h2>
+                                <h2 className="pay-title">Pay Loan: ₱{totalLeft.toFixed(2)}</h2>
                                 <input
                                     type="number"
                                     onChange={handlePaymentChange}
                                     className="pay-input"
-                                    placeholder="Enter amount to pay"
+                                    placeholder={`Enter amount to pay (Total Left: ₱${totalLeft.toFixed(2)})`}
                                 />
                                 <div className="pay-actions">
                                     <button onClick={onClose} className="pay-cancel cursor">Cancel</button>
