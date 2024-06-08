@@ -216,7 +216,7 @@ export default function LoanInfo() {
                                 <th>Loan ID</th>
                                 <th>Schedule</th>
                                 <th>Total</th>
-                                <th>Audit Trail</th>
+                                {/* <th>Audit Trail</th> */}
                                 <th>Status</th>
                                 {/* <th>Pay</th> */}
                             </tr>
@@ -228,14 +228,12 @@ export default function LoanInfo() {
             <td>{loan.loanId}</td>
             <td>{loan.schedule ? formatDate(loan.schedule) : ''}</td>
             <td>₱{Math.max(loan.payment - calculateTotalPaid(loan.id), 0).toFixed(2)}</td>
-            <td>{loan.id ? getTransactionDate(loan.id) : ''}</td>
+            {/* <td>{loan.id ? getTransactionDate(loan.id) : ''}</td> */}
             <td>{loan.status}</td>
             {/* <td><p>Pay</p></td> */}
         </tr>
     ))}
 </tbody>
-
-
                     </table>
                 </div>
             </div>

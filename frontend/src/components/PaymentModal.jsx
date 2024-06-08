@@ -151,7 +151,7 @@ const PaymentModal = ({ isOpen, onClose, loanId, currentAmount }) => {
                                     type="number"
                                     onChange={handlePaymentChange}
                                     className="pay-input"
-                                    placeholder={`Enter amount to pay (Total Left: ₱${totalLeft.toFixed(2)})`}
+                                    placeholder={`Enter amount to pay: `}
                                 />
                                 <div className="pay-actions">
                                     <button onClick={onClose} className="pay-cancel cursor">Cancel</button>
