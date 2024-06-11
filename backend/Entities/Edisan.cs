@@ -17,6 +17,8 @@ public partial class EdisanContext : DbContext
 
     public virtual DbSet<ClientInfo> ClientInfos { get; set; }
 
+    public virtual DbSet<Excess> Excesses { get; set; }
+
     public virtual DbSet<Loan> Loans { get; set; }
 
     public virtual DbSet<LoanPay> LoanPays { get; set; }
@@ -68,6 +70,20 @@ public partial class EdisanContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.UserType).HasColumnName("userType");
+        });
+
+        modelBuilder.Entity<Excess>(entity =>
+        {
+            entity.HasKey(e => e.ExcessId).HasName("PK__Excess__2DB0EAB8C225E892");
+
+            entity.ToTable("Excess");
+
+            entity.Property(e => e.ExcessId).HasColumnName("excess_id");
+            entity.Property(e => e.ScheduleId)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("schedule_id");
+            entity.Property(e => e.Total).HasColumnName("total");
         });
 
         modelBuilder.Entity<Loan>(entity =>
