@@ -244,6 +244,7 @@ td:last-child {
     height: 30px;
     border-radius: 50%;
     background-color: var(--titleText);
+    color: var(--bgColor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,6 +276,12 @@ td:last-child {
 
     .total-payable h2{
         margin-top: 5px;
+        color:var(--bgColor)
+    }
+
+    .total-payable p{
+        color:var(--bgColor)
+
     }
 
     .container > div:last-child{

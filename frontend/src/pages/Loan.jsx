@@ -185,7 +185,6 @@ export default function LoanInfo() {
         <p>No loan yet</p>
     )}
 </div>
-
                 </div>
                 {/* Third grid */}
                 <div>
