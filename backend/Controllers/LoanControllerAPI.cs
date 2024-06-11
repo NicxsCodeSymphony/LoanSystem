@@ -168,7 +168,7 @@ public IActionResult PayTheLoan(int id, [FromBody] LoanPay loan)
         .Sum(t => t.Amount);
 
     List<int> includedScheduleIds = new List<int>();
-    includedScheduleIds.Add(existingLoanPay.Id);
+    includedScheduleIds.Add(transaction.TransactionId);
 
     if (totalPaid >= existingLoanPay.Payment)
     {
@@ -177,25 +177,17 @@ public IActionResult PayTheLoan(int id, [FromBody] LoanPay loan)
         transaction.Amount = transaction.Amount - excessPayment;
         while (excessPayment > 0)
         {
-            // Find the next installment that is not paid yet and comes after the current one
             var nextLoanPay = _context.LoanPays
                 .Where(lp => lp.LoanId == loanEntity.Id && lp.Status != "Paid" && lp.Id > existingLoanPay.Id)
                 .OrderBy(lp => lp.Schedule)
                 .FirstOrDefault();
-
-            // If no next installment is found, exit the loop
             if (nextLoanPay == null)
             {
                 break;
             }
 
-            includedScheduleIds.Add(nextLoanPay.Id); // Add schedule_id to list
-
-            // Get the payment amount for the next installment
+            includedScheduleIds.Add(transaction.TransactionId);
             var nextPayment = nextLoanPay.Payment ?? 0;
-
-            // If the excess payment is greater than or equal to the next installment amount,
-            // mark the installment as paid and create a transaction for the full amount
             if (excessPayment >= nextPayment)
             {
                 var excessTransaction = new Transaction

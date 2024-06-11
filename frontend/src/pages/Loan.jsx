@@ -120,8 +120,6 @@ export default function LoanInfo() {
             year: 'numeric', 
             month: 'long', 
             day: 'numeric',
-            hour: 'numeric',
-            minute: 'numeric'
         };
         const date = new Date(dateString);
         if (!includeTime) {
