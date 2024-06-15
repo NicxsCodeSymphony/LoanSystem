@@ -239,6 +239,7 @@ export default function LoanInfo() {
           isOpen={paymentModalOpen}
           onClose={closePaymentModal}
           loanId={selectedLoan?.id}
+          LastName={clients.lastName}
           currentAmount={selectedLoan?.payment}
         />
         </div>

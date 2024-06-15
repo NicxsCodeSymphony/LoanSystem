@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import '../styles/PaymentModal.css'; // Import the CSS file
 
-const PaymentModal = ({ isOpen, onClose, loanId, currentAmount }) => {
+const PaymentModal = ({ isOpen, onClose, loanId, currentAmount, LastName }) => {
     const [formData, setFormData] = useState({});
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
@@ -141,6 +141,7 @@ const PaymentModal = ({ isOpen, onClose, loanId, currentAmount }) => {
                                 <h2 className="pay-title">Payment for this schedule was Paid</h2>
                                 <p className="pay-status">Paid on {getTransactionDate(formData.id)}</p>
                                 <div className="pay-actions">
+                                    <button className="pay-cancel cursor" onClick={() => window.location.href = `/print/${LastName}/${loanId}`}>See Transaction Info</button>
                                     <button onClick={onClose} className="pay-cancel cursor">Close</button>
                                 </div>
                             </>

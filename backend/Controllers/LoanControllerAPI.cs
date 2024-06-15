@@ -279,5 +279,18 @@ catch (Exception ex)
             }
             return Ok(client);
         }
+
+
+        [HttpGet("GetTransactionToPrint/{id}")]
+        public IActionResult GetTransactionsToPrint(int id)
+{
+    var transactions = _context.Transactions.Where(t => t.ScheduleId == id).ToList();
+    if (transactions == null)
+    {
+        return NotFound("Transactions not found for the specified scheduleId");
+    }
+    
+    return Ok(transactions);
+}
     }
 }

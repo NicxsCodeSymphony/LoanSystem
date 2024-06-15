@@ -9,6 +9,8 @@ import AddClient from './pages/CreateClient'
 import UserType from './pages/UserType'
 import CreateUserType from './components/CreateUserType'
 import EditUserType from './components/EditUserType'
+import Prints from './pages/Print'
+
 
 function App() {
 
@@ -24,6 +26,7 @@ function App() {
         <Route path='/usertype' element={<UserType />}></Route>
         <Route path='/create/userType' element={<CreateUserType />}></Route>
         <Route path='/edit/usertype/:id' element={<EditUserType />}></Route>
+        <Route path='/print/:id/:id' element={<Prints />}></Route>
        
       </Routes>
     </div>
