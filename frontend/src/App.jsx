@@ -10,13 +10,15 @@ import CreateUserType from './components/CreateUserType';
 import EditUserType from './components/EditUserType';
 import PrivateRoute from './crud/PrivateRoute';
 import Prints from './pages/Print';
+import LoginLink from './crud/LoginRoute';
 
 function App() {
   return (
     <div className="page">
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<LoginLink><Login /></LoginLink>} />
+        <Route path="/client" element={<PrivateRoute><Client /></PrivateRoute>} />
         <Route path="/client" element={<PrivateRoute><Client /></PrivateRoute>} />
         <Route path="/Loan/:id" element={<PrivateRoute><LoanInfo /></PrivateRoute>} />
         <Route path="/clientEdit/:id" element={<PrivateRoute><EditClient /></PrivateRoute>} />

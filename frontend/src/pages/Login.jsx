@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Assuming you are using React Router for navigation
 import '../styles/Login.css';
 import Auth from '../crud/Auth';
@@ -14,7 +14,7 @@ export default function Login() {
     try {
       const response = await Auth.login(username, password);
       alert("Successfully Logged in");
-      window.location.href = "/client"
+      navigate('/client', { replace: true }); // Navigate to the client page after login
     } catch (err) {
       console.log(err);
       setError('Invalid username or password');
