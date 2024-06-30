@@ -373,3 +373,10 @@ c:\Users\edisa\Desktop\Finals\LoanSystem\backend\obj\Debug\net7.0\refint\backend
 c:\Users\edisa\Desktop\Finals\LoanSystem\backend\obj\Debug\net7.0\backend.pdb
 c:\Users\edisa\Desktop\Finals\LoanSystem\backend\obj\Debug\net7.0\backend.genruntimeconfig.cache
 c:\Users\edisa\Desktop\Finals\LoanSystem\backend\obj\Debug\net7.0\ref\backend.dll
+c:\Users\edisa\Desktop\Finals\LoanSystem\backend\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+c:\Users\edisa\Desktop\Finals\LoanSystem\backend\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+c:\Users\edisa\Desktop\Finals\LoanSystem\backend\bin\Debug\net7.0\Microsoft.OpenApi.dll
+c:\Users\edisa\Desktop\Finals\LoanSystem\backend\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+c:\Users\edisa\Desktop\Finals\LoanSystem\backend\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+c:\Users\edisa\Desktop\Finals\LoanSystem\backend\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+c:\Users\edisa\Desktop\Finals\LoanSystem\backend\obj\Debug\net7.0\backend.MvcApplicationPartsAssemblyInfo.cs
