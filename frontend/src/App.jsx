@@ -11,6 +11,7 @@ import EditUserType from './components/EditUserType';
 import PrivateRoute from './crud/PrivateRoute';
 import Prints from './pages/Print';
 import LoginLink from './crud/LoginRoute';
+import Register from './pages/Register';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/login" element={<LoginLink><Login /></LoginLink>} />
+        <Route path="/register" element={<PrivateRoute><Register /></PrivateRoute>} />
         <Route path="/client" element={<PrivateRoute><Client /></PrivateRoute>} />
         <Route path="/client" element={<PrivateRoute><Client /></PrivateRoute>} />
         <Route path="/Loan/:id" element={<PrivateRoute><LoanInfo /></PrivateRoute>} />
